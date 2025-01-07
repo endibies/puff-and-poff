@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:padding="30dp"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:textStyle="bold"
+        android:layout_marginTop="100px"
+        android:text="Register"
+        android:textSize="100px"
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"/>
+    <EditText
+        android:id="@+id/EmailET"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:hint="Email"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#000000"
+        android:textSize="50px"
+
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"/>
+
+
+
+    <EditText
+        android:id="@+id/UsernameET"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:hint="Username"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#000000"
+        android:textSize="50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"/>
+    <EditText
+        android:id="@+id/PasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:hint="Password"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#000000"
+        android:textSize="50px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"/>
+
+    <EditText
+        android:id="@+id/PhoneET"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:hint="Phone Number"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#A9A9A9"
+        android:textColor="#000000"
+        android:textSize="50px"/>
+
+    <TextView
+        android:layout_marginLeft="40px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="70px"
+        ></TextView>
+
+    <RadioGroup
+        android:id="@+id/GenderRG"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:ignore="ExtraText"><RadioButton
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Male"
+        ></RadioButton>
+
+        ><RadioButton
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Female"
+            ></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/RegisBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Register"
+        />
+
+    <Button
+        android:id="@+id/LoginBT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_dynamic_neutral100"
+        android:text="Already has an account? Log in here"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>
